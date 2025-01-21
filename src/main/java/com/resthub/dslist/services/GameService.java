@@ -1,5 +1,6 @@
-package com.resthub.dslist.service;
+package com.resthub.dslist.services;
 
+import com.resthub.dslist.dto.GameMinDTO;
 import com.resthub.dslist.entities.Game;
 import com.resthub.dslist.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +14,10 @@ public class GameService {
     @Autowired
     private GameRepository gameRepository;
 
-    public List<Game> findAll() {
+    public List<GameMinDTO> findAll() {
         List<Game> result = gameRepository.findAll();
-        return result;
+        List<GameMinDTO> dto = result.stream().map(x -> new GameMinDTO(x)).toList();
+        return dto;
     }
 
 }
