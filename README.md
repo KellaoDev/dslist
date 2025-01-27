@@ -39,7 +39,7 @@ This RESTful API was developed with Java and uses the Spring Boot framework. The
 
 | Field   | Type       | Required                                   |  allowed values| 
 | :---------- | :--------- | :------------------------------------------ | :------|
-| `sourceIndex`      | `integer (int64)` | **Yes** | Bearer eyJhbGciOiJIUzI1Ni... **()** |
+| `sourceIndex`      | `integer (int64)` | **Yes** | >= 0 |
 | `destinationIndex`      | `integer (int64)` | **Yes** |  >= 0 |
 
 ## Technologies used
