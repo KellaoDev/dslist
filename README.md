@@ -83,7 +83,7 @@ spring.h2.console.path=/h2-console
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 
-# Configure database
+# Configure database production
 In the archive application.properties:
 Example(PostgreSQL)
 
